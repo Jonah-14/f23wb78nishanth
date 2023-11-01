@@ -1,23 +1,8 @@
 extends layout
 
 block content
-  h1 Welcome to Your App
-  include icecream
-  
-  p Hi i am Jonah Nishanth
-  a(href="/icecream")
-    br
-    button(type="button" ,class="btn btn-info" ,onclick="goFaster()") Info
-    br
-    div#faster Increase the speed
-
-  script.
-    let mph = 20;
-    let change = 1;
-
-    function goFaster() {
-      mph += change;
-      change += 1;
-      document.getElementById('faster').textContent = `MPH ${mph} with change ${change}`;
-    }
-    
+  h1= title
+  p Hi i am Jonah Nishanth #{title}
+  button(type="button" class="btn btn-info" onclick="goFaster()") Info
+  br
+  a(href='http://localhost:3000/icecream') Click Here to Visit icecream Website
