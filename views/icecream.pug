@@ -2,3 +2,12 @@ extends layout
 
 block content
   h1= title
+  - const results = [{ flavor: "Vanilla", type: "Classic", rating: 4.5 },{ flavor: "Chocolate", type: "Premium", rating: 4.8 },{ flavor: "Strawberry", type: "FruitFlavored", rating: 4.2 }]
+
+  .container-fluid
+    .row
+      each icecream in results
+        .col-sm-2
+          h5 Flavor: #{icecream.flavor}
+          p Type: #{icecream.type}
+          p Rating: #{icecream.rating}

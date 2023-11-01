@@ -6,7 +6,7 @@ link to remote Render server[https://f23wb78nishanth.onrender.com/](https://f23w
 class Icecreams{
   constructor(flavor, color, Price) {
     this.flavor = flavor;
-    this.color = color;
-    this.price = price;
+    this.type = type;
+    this.rating= rating;
   }
 }

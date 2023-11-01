@@ -1,8 +1,11 @@
 extends layout
 
 block content
-  h1= title
+  h1 Welcome to Your App
+  include icecream
+  
   p Hi i am Jonah Nishanth
+  a(href="/icecream")
     br
     button(type="button" ,class="btn btn-info" ,onclick="goFaster()") Info
     br
@@ -17,3 +20,4 @@ block content
       change += 1;
       document.getElementById('faster').textContent = `MPH ${mph} with change ${change}`;
     }
+    
